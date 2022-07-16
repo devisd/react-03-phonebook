@@ -85,7 +85,7 @@ class App extends Component {
       >
         <h1>Phonebook</h1>
         <Form onSubmit={this.formSubmitHandler} />
-        <Filter state={this.state} onChange={this.onFilter} />
+        <Filter filter={this.state.filter} onChange={this.onFilter} />
         <h2>Contacts</h2>
         <Contacts
           contacts={filteredContacts}
